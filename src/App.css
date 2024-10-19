@@ -1,4 +1,4 @@
-/* src/App.css */
+
 
 body {
   margin: 0;
@@ -150,11 +150,10 @@ h2 {
       0 0 30px rgba(255, 165, 0, 1);
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .chat-container {
       padding: 20px;
-      height: auto; /* Позволяет высоте адаптироваться */
+      height: auto; 
   }
 
   h1 {
@@ -166,15 +165,15 @@ h2 {
   }
 
   .message-form input {
-      font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
+      font-size: 14px; 
   }
 
   .message-form button {
-      font-size: 14px; /* Уменьшаем размер шрифта на мобильных */
+      font-size: 14px; 
   }
 
   .username-container input {
-      width: 80%; /* Делаем ширину ввода более адаптивной */
+      width: 80%; 
   }
 }
 
@@ -184,21 +183,20 @@ h2 {
   }
 
   .username-container input {
-      width: 90%; /* Увеличиваем ширину для мобильных устройств */
+      width: 90%; 
   }
 
   .message-form {
-      flex-direction: column; /* Вертикальная компоновка для мобильных */
+      flex-direction: column; 
   }
 
   .message-form input {
-      margin-right: 0; /* Убираем правый отступ */
-      margin-bottom: 10px; /* Добавляем нижний отступ */
-      width: 100%; /* Полная ширина на мобильных */
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%; 
   }
 }
 
-/* ... остальные стили ... */
 
 @keyframes fadeIn {
   0% {
@@ -218,18 +216,18 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   transition: background-color 0.3s, transform 0.2s;
-  animation: fadeIn 0.5s ease; /* Применяем анимацию */
+  animation: fadeIn 0.5s ease;
 }
 
 .messages li:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  transform: scale(1.02); /* Увеличение при наведении */
+  transform: scale(1.02); 
 }
 
-/* Анимация для формы сообщений */
+
 .message-form {
   display: flex;
-  animation: slideIn 0.5s ease-in-out; /* Эффект появления формы */
+  animation: slideIn 0.5s ease-in-out; 
 }
 
 @keyframes slideIn {
@@ -237,13 +235,13 @@ h2 {
   to { transform: translateY(0); }
 }
 
-/* Анимация для кнопок */
+
 .message-form button, .username-container button {
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .message-form button:hover, .username-container button:hover {
-  transform: scale(1.05); /* Увеличение кнопок при наведении */
+  transform: scale(1.05); 
 }
 
 .loading-message {
@@ -251,5 +249,5 @@ h2 {
   color: white;
   text-align: center;
   font-style: italic;
-  animation: fadeIn 1s ease-in; /* Анимация для загрузки */
+  animation: fadeIn 1s ease-in;
 }

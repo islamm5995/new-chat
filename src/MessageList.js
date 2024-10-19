@@ -1,4 +1,4 @@
-// src/MessageList.js
+
 import React, { useEffect, useState } from 'react';
 import { database } from './firebase';
 import { ref, onValue } from 'firebase/database';
@@ -15,7 +15,7 @@ function MessageList() {
                 ? Object.entries(data).map(([key, value]) => ({ id: key, ...value }))
                 : [];
             setMessages(messagesList);
-            setLoading(false); // Сигнализируем, что загрузка завершена
+            setLoading(false);
         });
 
         return () => unsubscribe();
